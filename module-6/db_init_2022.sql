@@ -6,14 +6,14 @@
 */
 
 -- drop database user if exists 
-DROP USER IF EXISTS 'movies_user'@'localhost';
+DROP USER IF EXISTS 'bacchus_user'@'localhost';
 
 
 -- create movies_user and grant them all privileges to the movies database 
-CREATE USER 'movies_user'@'localhost' IDENTIFIED WITH mysql_native_password BY 'popcorn';
+CREATE USER 'bacchus_user'@'localhost' IDENTIFIED WITH mysql_native_password BY 'winery';
 
 -- grant all privileges to the movies database to user movies_user on localhost 
-GRANT ALL PRIVILEGES ON movies.* TO 'movies_user'@'localhost';
+GRANT ALL PRIVILEGES ON bacchus.* TO 'bacchus_user'@'localhost';
 
 
 -- drop tables if they are present
